@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LATIN MAFIA Story</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Música de fondo (inicia en el segundo 6) -->
+    <audio autoplay loop src="LATIN MAFIA - Siento que merzco mas.mp3#t=6"></audio>
+
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="heart"></li>
+            <li class="heart"></li>
+            <li class="heart"></li>
+            <li class="heart"></li>
+            <li class="heart"></li>
+        </ul>
+    </div>
+    <main class="story-wrapper">
+
+        <!-- --- Sección: Te Pienso --- -->
+        <div class="entry" style="--delay: 0.2s">
+            <p class="lyrics">Te pienso</p>
+            <div class="card"
+                data-url="https://open.spotify.com/intl-es/album/0DMDbZtZT028siJ0GEdLrQ?si=QI3UsOT4Ro-kXnweJ8roFw"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('imagen 1.png');">
+                <img src="imagen 1.png" alt="Cover 1">
+                <div class="details">
+                    <span class="track">TODOS LOS DÍAS TODO EL DÍA</span>
+                    <span class="meta">Álbum • LATIN MAFIA</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- --- Sección: Porque si eres tú --- -->
+        <div class="entry align-right" style="--delay: 0.4s">
+            <p class="lyrics">Porque si eres tú</p>
+            <div class="card"
+                data-url="https://open.spotify.com/intl-es/track/1ZunPTRc0PUFfdSWa3qMB1?si=efa74ac8a6624060"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('imagen 2.png');">
+                <img src="imagen 2.png" alt="Cover 2">
+                <div class="details">
+                    <span class="track">Yo siempre contesto.</span>
+                    <span class="meta">Canción • LATIN MAFIA</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- --- Sección: Tal vez tuve --- -->
+        <div class="entry" style="--delay: 0.6s">
+            <p class="lyrics">Tal vez tuve</p>
+            <div class="card"
+                data-url="https://open.spotify.com/intl-es/track/68HZeyktDHYYYwZiMoAhMx?si=9820137533144d7f"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('imagen 3.png');">
+                <img src="imagen 3.png" alt="Cover 3">
+                <div class="details">
+                    <span class="track">Mala buena suerte</span>
+                    <span class="meta">Canción • LATIN MAFIA</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- --- Sección: Pero no digas nada --- -->
+        <div class="entry align-right" style="--delay: 0.8s">
+            <p class="lyrics">Pero</p>
+            <div class="card"
+                data-url="https://open.spotify.com/intl-es/track/4wtWL0UV8tCPv9VbUMLXYP?si=005a728486684c4f"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('imagen 4.png');">
+                <img src="imagen 4.png" alt="Cover 4">
+                <div class="details">
+                    <span class="track">No digas nada</span>
+                    <span class="meta">Canción • LATIN MAFIA</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- --- Sección: Muchas veces --- -->
+        <div class="entry" style="--delay: 1s">
+            <p class="lyrics">Muchas veces</p>
+            <div class="card"
+                data-url="https://open.spotify.com/intl-es/track/4Z6pPinNzkGtbgAlE88263?si=078c806bf93d4c96"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('imagen 5.png');">
+                <img src="imagen 5.png" alt="Cover 5">
+                <div class="details">
+                    <span class="track">Siento que merezco más</span>
+                    <span class="meta">Canción • LATIN MAFIA</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- --- Sección: Al final serás mi --- -->
+        <div class="entry align-right" style="--delay: 1.2s">
+            <p class="lyrics">Al final serás mi</p>
+            <div class="card"
+                data-url="https://open.spotify.com/intl-es/track/06QTfbiMgQvh8gXQPlfC8J?si=271ab34e494d432a"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('imagen 6.png');">
+                <img src="imagen 6.png" alt="Cover 6">
+                <div class="details">
+                    <span class="track">Persona Favorita</span>
+                    <span class="meta">Canción • Jesse Baez, LATIN MAFIA</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- --- Mensaje Final y Botones --- -->
+        <div class="final-message">
+            <p>Busca el mesaje oculto</p>
+            <div class="action-buttons">
+                <button id="repeat-btn">Volver a empezar</button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- --- Botón flotante para el Mensaje Oculto --- -->
+    <div id="secret-btn" class="floating-secret" title="¡Atrápame!"></div>
+
+    <!-- --- Modal de Mensaje Oculto --- -->
+    <div id="secret-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close-btn">&times;</span>
+            <h2>Para mi persona favorita</h2>
+            <p>"사랑해. 말로 표현하기는 어렵지만, 넌 내 인생에서 두 번째로 중요한 사람이야. 첫 번째는 박태준이지. 하하, 농담이야. 하지만 정말 사랑해. 온 마음을 다해 사랑해. 사랑해, 누나.
+                너무 길게 썼나? 괜찮아, 사랑해..."</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
