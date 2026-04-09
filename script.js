@@ -63,3 +63,19 @@ if (secretBtn && secretModal && closeModal) {
         }
     });
 }
+
+// 5. Reproducir música automáticamente (Solución para bloqueo de navegadores)
+const bgMusic = document.getElementById('bg-music');
+if (bgMusic) {
+    // Intenta reproducir al cargar
+    bgMusic.play().catch(() => {
+        // Si el navegador lo bloquea, espera al primer clic o toque en la pantalla
+        const playMusic = () => {
+            bgMusic.play();
+            document.removeEventListener('click', playMusic);
+            document.removeEventListener('touchstart', playMusic);
+        };
+        document.addEventListener('click', playMusic);
+        document.addEventListener('touchstart', playMusic);
+    });
+}
